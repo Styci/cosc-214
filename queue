@@ -1,0 +1,19 @@
+import java.util.ArrayDeque;
+import java.util.Deque;
+
+public class QueueExample {
+    public static void main(String[] args) {
+
+        Deque<String> names = new ArrayDeque<>();
+
+        names.add("Apple");
+        names.add("Banana");
+        names.add("Orange");
+        names.add("Grape");
+        names.add("Mango");
+
+        while (!names.isEmpty()) {
+            System.out.println(names.remove());
+        }
+    }
+}
