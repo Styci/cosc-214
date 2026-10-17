@@ -1,0 +1,18 @@
+import java.util.Stack;
+
+public class StackExample {
+    public static void main(String[] args) {
+
+        Stack<String> names = new Stack<>();
+
+        names.push("Apple");
+        names.push("Banana");
+        names.push("Orange");
+        names.push("Grape");
+        names.push("Mango");
+
+        while (!names.isEmpty()) {
+            System.out.println(names.pop());
+        }
+    }
+}
